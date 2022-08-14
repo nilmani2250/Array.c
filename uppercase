@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+char s[10],i;
+printf("Enter the string\n");
+scanf("%s",s);
+printf("Before s=%s\n",s);
+for(i=0;s[i];i++)
+if(s[i]>='a' && s[i]<='z')
+s[i]=s[i]-3;
+printf("After s=%s\n",s);
+}
