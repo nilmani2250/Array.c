@@ -1,0 +1,16 @@
+//wap to add second at the end of the first string.//
+
+#include<stdio.h>
+void main()
+{
+char f[20],s[10],i,j;
+printf("Enter the 1  and 2 string\n");
+scanf("%s %s",f,s);
+printf("f=%s s=%s\n",f,s);
+
+for(i=0;f[i];i++)
+for(j=0;s[i];i++,j++)
+f[i]=s[j];
+f[j]=s[j];
+printf("f=%s s=%s\",f,s);
+}
