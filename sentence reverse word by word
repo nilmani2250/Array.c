@@ -1,0 +1,18 @@
+#include<stdio.h>
+void reverse()
+{
+  char c;
+  scanf("%c",&c);
+  
+  if('\n'!=c)
+  {
+    reverse();
+    printf("%c",c);
+   }
+ }
+ int main()
+ {
+    printf("Enter the sentence\n");
+    reverse();
+    return 0;
+  }
